@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background-color: rgb(31, 98, 121);
+  color: blanchedalmond;
+  font-family: Verdana, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.main-header {
+  text-align: center;
+  border-bottom: 1px dotted aliceblue;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  background-color: #a52a2a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  line-height: 150%;
+}
+
+.main-nav a {
+  color: white;
+  text-align: 20px;
+}
+
+.main-nav a:hover {
+  background-color: #941919;
+}
+
+.main-nav ul {
+  display: flex;
+  text-align: left;
+  margin: 0 0 0 50px;
+  padding: 0;
+}
+
+.main-nav ul li:first-child {
+  border-left: 1px dotted white;
+}
+
+.main-nav ul li {
+  list-style-type: None;
+  border-right: 1px dotted white;
+}
+
+.planety {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.planety div h3 {
+  text-align: center;
+}
+
+.planety div {
+  width: 30%;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.list {
+  list-style-type: upper-roman;
+  padding-left: 50px;
+  text-align: center;
+  list-style-position: inside;
+  padding-bottom: 10px;
+  color: azure;
+}
+
+footer {
+  border-top: 1px dotted aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.obraz {
+  display: block;
+  width: 50%;
+  margin: 15px auto;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 1000px) {
+  .planety div {
+    width: 45%;
+  }
+
+  .obraz {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info {
+    width: 95%;
+  }
+
+  .planety div {
+    padding: 10px;
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .main-header {
+    margin-top: 40px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav ul li:first-child {
+    border: none;
+  }
+
+  .main-nav ul li {
+    border: none;
+    width: 100%;
+  }
+
+  .obraz {
+    width: 95%;
+  }
+}
